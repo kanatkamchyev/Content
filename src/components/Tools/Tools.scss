@@ -1,0 +1,157 @@
+.Tools {
+    background-color:aliceblue;
+
+    &__inside {
+        padding: 45px 0;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__logo svg path {
+        fill: black;
+    }
+
+    &__show svg {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        path {
+            fill: black;
+
+        }
+    }
+
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+
+        .box {
+            max-width: 427px;
+
+            .image img {
+                width: 427px;
+                height: 268px;
+            }
+
+            .box__text {
+                margin-top: 30px;
+
+                .title {
+                    color: #000;
+                    font-family: Roboto, sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 33.6px;
+                }
+
+                .descrbe {
+                    margin-top: 5px;
+                    max-width: 423px;
+                    color: #000;
+                    font-family: Roboto, sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.ToolsHide {
+    &__inside {
+        .title h1 {
+            margin-top: 4px;
+            color: #000;
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+            text-align: center;
+        }
+
+        .describe {
+            margin: 22px auto;
+            max-width: 589px;
+            color: #000;
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26.4px;
+            opacity: 0.8;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+
+    .Tools__boxes{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 935px){
+    .Tools__boxes{
+        justify-content: center;
+    }
+
+    .ToolsHide__inside .title h1 {
+        margin-top: 30px;
+    }
+
+
+}
+
+
+@media (max-width: 500px){
+
+    .ToolsHide__inside .title h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .ToolsHide__inside .describe {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .Tools__boxes .box .image img {
+        width: 330px;
+        height: 165px;
+    }
+
+    .Tools__boxes .box .box__text .title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .Tools__boxes .box .box__text .descrbe{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .Tools__boxes .box .box__text{
+        margin-top: 15px;
+    }
+
+    .Tools__logo svg{
+        width: 180px;
+    }
+}

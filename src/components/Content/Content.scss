@@ -1,0 +1,133 @@
+.Content {
+    background-image: url('../assets/imgs/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__inside {
+        padding: 93px 0 173px 0;
+    }
+
+    &__top-titles {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        p {
+            color: #FFF;
+            font-family: Roboto, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21.6px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+    }
+
+    &__texts {
+        margin-top: 16px;
+
+        .Text {
+            color: #FFF;
+            font-family: Roboto, sans-serif;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px;
+        }
+    }
+
+    &__describe {
+        margin-top: 22px;
+        max-width: 500px;
+        color: #FFF;
+        font-family: Roboto, sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26.4px;
+        opacity: 0.8;
+    }
+
+    &__btn {
+        margin-top: 46px;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .Content{
+
+        &__inside{
+            padding: 80px 50px;
+        }
+
+    }
+}
+
+
+@media (max-width: 750px) {
+    .Content{
+
+        &__inside{
+            padding: 80px 50px;
+        }
+
+        &__texts .Text{
+            font-size: 52px;
+            line-height: 52px;
+        }
+
+        &__describe{
+            font-size: 18px;
+            line-height: 21.6px;
+        }
+
+        &__top-titles{
+            p{
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 450px) {
+    .Content{
+
+        &__inside{
+            padding: 40px 20px;
+        }
+
+        &__texts .Text{
+            font-size: 38px;
+            line-height: 42px;
+        }
+
+        &__describe{
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        &__top-titles{
+            gap: 20px;
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        &__btn{
+            .Button{
+                button{
+                    padding: 15px 25px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+}

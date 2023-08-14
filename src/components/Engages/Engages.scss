@@ -1,0 +1,430 @@
+.Engages {
+    background-color: #60777C;
+
+    .engage__box {
+        padding: 78px 0 120px 0;
+
+        .box {
+            display: flex;
+            gap: 157px;
+            align-items: center;
+
+            .card__item {
+                position: relative;
+            }
+
+            .card__item:hover {
+                border: 1px solid black;
+                background-color: white;
+            }
+
+            .card__item:hover .card__img {
+                transform: translate3d(-10px, -10px, 0);
+            }
+
+            .card__item:hover .card__img img {
+                opacity: .1;
+            }
+
+            .card__item:hover .card__text {
+                opacity: 1;
+            }
+
+            .card__img {
+                background: linear-gradient(to bottom, #f38181, #000);
+                transition: transform .2s linear;
+                cursor: pointer;
+            }
+
+            .card__img img {
+                display: block;
+                transition: opacity .1s linear;
+            }
+
+            .card__text {
+                width: 100%;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 2;
+                transform: translate3d(0, -50%, 0);
+                transition: opacity .2s linear;
+            }
+
+            .right {
+                .right__title {
+                    color: #FFF;
+                    font-family: Roboto, sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 33.6px;
+                }
+
+                .right__describe {
+                    margin-top: 220px;
+                    color: #FFF;
+                    font-family: Roboto, sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 33.6px;
+                }
+
+                .right__bottom a {
+                    color: rgba(255, 255, 255, 0.27);
+                    font-family: Roboto, sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    text-decoration-line: underline;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &__inside {
+        padding: 80px 0 120px 0;
+    }
+
+    &__title h1 {
+        margin: 0 auto;
+        max-width: 604px;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+    }
+
+    &__describe {
+        max-width: 642px;
+        margin: 22px auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26.4px;
+        opacity: 0.8;
+
+    }
+
+    &__boxes {
+        margin-top: 120px;
+
+        .box:not(:last-child) {
+            margin-bottom: 120px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card__item {
+                position: relative;
+                background-color: white;
+            }
+
+            .card__item:hover {
+                border: 1px solid black;
+                background-color: white;
+            }
+
+            .card__item:hover .card__img {
+                transform: translate3d(-10px, -10px, 0);
+            }
+
+            .card__item:hover .card__img img {
+                opacity: .1;
+            }
+
+            .card__item:hover .card__text {
+                opacity: 1;
+            }
+
+            .card__img {
+                background: linear-gradient(to bottom, #f38181, #000);
+                transition: transform .2s linear;
+                cursor: pointer;
+            }
+
+            .card__img img {
+                display: block;
+                transition: opacity .1s linear;
+            }
+
+            .card__text {
+                width: 100%;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 2;
+                transform: translate3d(0, -50%, 0);
+                transition: opacity .2s linear;
+            }
+
+            @keyframes left {
+                from {
+                    transform: translateX(-100px);
+                }
+
+                to {
+                    transform: translateX(0);
+                }
+
+            }
+
+            .left.active {
+                animation-name: left;
+                animation-duration: 2s;
+            }
+
+            @keyframes right {
+                from {
+                    transform: translateX(100px);
+                }
+
+                to {
+                    transform: translateX(0);
+                }
+
+            }
+
+            .right {
+                position: relative;
+            }
+
+            .right.active {
+                animation-name: right;
+                animation-duration: 2.5s;
+            }
+
+            .left__title h1 {
+                color: #FFF;
+                font-family: Roboto, sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+            }
+
+            .left__describe {
+                max-width: 500px;
+                margin-top: 22px;
+                color: #FFF;
+                font-family: Roboto, sans-serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26.4px;
+                opacity: 0.8;
+
+            }
+        }
+    }
+}
+
+.Protect {
+    background-color: white;
+
+    &__inside {
+
+        .box {
+            display: flex;
+            gap: 157px;
+            align-items: center;
+
+            .card__item {
+                position: relative;
+                background-color: #60777C;
+            }
+
+            .card__item:hover .card__img {
+                transform: translate3d(-10px, -10px, 0);
+            }
+
+            .card__item:hover .card__img img {
+                opacity: .1;
+            }
+
+            .card__item:hover .card__text {
+                opacity: 1;
+            }
+
+            .card__img {
+                background: linear-gradient(to bottom, #f38181, #000);
+                transition: transform .2s linear;
+                cursor: pointer;
+            }
+
+            .card__img img {
+                display: block;
+                transition: opacity .1s linear;
+            }
+
+            .card__text {
+                width: 100%;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 2;
+                transform: translate3d(0, -50%, 0);
+                transition: opacity .2s linear;
+            }
+
+            .right {
+                .right__title h1 {
+                    color: #000;
+                    font-family: Roboto, sans-serif;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 56px;
+                }
+
+                .right__describe {
+                    margin-top: 22px;
+                    max-width: 543px;
+                    color: #000;
+                    font-family: Roboto, sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26.4px;
+                    opacity: 0.8;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media(max-width:1150px) {
+    .Engages__boxes .box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Engages__boxes .box .left {
+        margin-bottom: 40px;
+    }
+
+    .Engages__boxes .box .left__describe {
+        text-align: center;
+    }
+
+    .Protect__inside .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .Engages .engage__box .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .Engages .engage__box .box .right .right__describe {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 660px) {
+    .Engages__boxes .box .card__img img {
+        width: 500px;
+    }
+
+    .Protect__inside .box .card__img img {
+        width: 500px;
+    }
+
+    .Engages .engage__box .box .card__img img {
+        width: 500px;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    .Engages__title h1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .Engages__describe {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .Engages__boxes .box .left__title h1 {
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .Protect__inside .box .right .right__title h1 {
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .Engages__boxes .box .left__describe {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .Engages .engage__box .box .right .right__title{
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+
+
+    .Protect__inside .box .right .right__describe {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+
+
+
+
+    .Engages__boxes .box .card__img img {
+        width: 350px;
+    }
+
+    .Protect__inside .box .card__img img {
+        width: 350px;
+    }
+
+    .Engages .engage__box .box .card__img img {
+        width: 350px;
+    }
+}

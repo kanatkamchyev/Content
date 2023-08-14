@@ -1,0 +1,136 @@
+.Point {
+
+  &__inside {
+    padding: 80px 0;
+
+    .slider__all{
+      margin-top: 65px;
+    }
+
+    .swiper-slide{
+      width: 275px !important;
+    }
+
+     .swiper-slide img{
+      width: 275px !important;
+    }
+
+    .swiper-pagination{
+      position: relative;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .slider-nav{
+      display: flex;
+      justify-content: end;
+      gap: 5px;
+      margin-right: 50px;
+    }
+
+
+  }
+
+  &__title h1 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+  }
+
+  &__describe {
+    margin: 22px auto;
+    max-width: 627px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.4px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media(max-width:1100px){
+  .Point__inside .swiper-slide img {
+    width: 250px !important;
+  }
+
+}
+
+
+@media(max-width:880px){
+  .Point__inside .slider__all {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width:700px){
+  .Point__inside .swiper-slide img {
+    width: 275px !important;
+  }
+}
+
+
+@media(max-width:530px){
+    .Point__inside .swiper-slide img {
+    width: 245px !important;
+  }
+
+  .Point__inside .swiper-slide{
+    width: 245px !important;
+    margin-right: 10px !important;
+  }
+
+}
+
+@media(max-width:430px){
+    .Point__inside .swiper-slide img {
+    width: 225px !important;
+  }
+
+  .Point__inside .swiper-slide{
+    width: 225px !important;
+  }
+
+}
+
+
+
+
+@media(max-width:620px){
+  .Point__title h1{
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .Point__describe {
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .Point__link{
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
